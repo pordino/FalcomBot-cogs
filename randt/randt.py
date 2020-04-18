@@ -12,7 +12,7 @@ class RandomizationTools(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def pick(self, ctx, *items):
+    async def rpick(self, ctx, *items):
         """Chooses/picks a random item from N multiple items.
 
         To denote multiple-word items, you should use double quotes."""
@@ -23,7 +23,7 @@ class RandomizationTools(commands.Cog):
             await ctx.send(info("From {} items, I pick: {}".format(len(items), choice(items))))
 
     @commands.command()
-    async def pickx(self, ctx, x : int, *items):
+    async def rpickx(self, ctx, x : int, *items):
         """From a set of N items, chooses/picks X items and display them.
         
         This is random choosing with replacement, and is the same as using the "pick" command multiple times.
