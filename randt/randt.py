@@ -64,7 +64,7 @@ class RandomizationTools(commands.Cog):
             await ctx.send(info("A randomized order of {} items: {}".format(len(items), ", ".join(shuffle(items)))))
 
 
-    @commands.command(aliases=["dice"])
+    @commands.command(aliases=["rdice"])
     async def rolldice(self, ctx, *bounds):
         """Rolls the specified single or multiple dice.
         
